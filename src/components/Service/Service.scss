@@ -1,0 +1,150 @@
+@import "../../global.scss";
+
+
+.row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  overflow: hidden;
+  align-items: flex-start;
+  justify-content: center;
+}
+.col__2 {
+  max-width: 50%;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  flex-direction: column;
+}
+.col__3 {
+  max-width: 33.333333%;
+  display: flex;
+  padding: 9px;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.containers {
+  width: 92%;
+  margin: 0px auto;
+}
+.component__space {
+  padding: 70px 0px;
+}
+.pointer {
+  cursor: pointer;
+}
+
+h1 {
+  &.heading {
+    font-size: 60px;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+
+    margin-bottom: 10px;
+  }
+  &.service__text {
+  color: #fff;
+    font-size: 19px;
+    font-family: Poppins, sans-serif;
+    padding: 10px 0px;
+  }
+}
+p {
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #767676;
+}
+
+p {
+  &.heading {
+    &.p__color {
+      margin-bottom: 0;
+      text-align: center;
+      line-height: 1.2;
+    }
+  }
+  &.service__text {
+    &.p__color {
+      margin-bottom: 0;
+    }
+  }
+}
+.service__box {
+  border-radius: 10px;
+  width: 100%;
+  background-color: #191919;
+  padding: 55px;
+  transition: 0.4s ease;
+
+  @include mobile {
+    padding: 28px;
+
+  }
+  &:hover {
+    transform: translateY(5px);
+    background-image: linear-gradient(90deg, #f61b10, #ef0963);
+    .icon {
+      color: #fff;
+    }
+    p {
+      &.service__text {
+        &.p__color {
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}
+.icon {
+  margin-left: 95px;
+  font-size: 54px;
+  font-weight: 400;
+  margin-bottom: 23px;
+  display: inline-flex;
+  color: #f9004d;
+
+  @include mobile{
+    margin-left: 62px;
+
+  }
+}
+
+.c2{
+  margin-left:99px;
+  @include mobile{
+    margin-left:52px;
+
+  }
+}
+
+.c3{
+  margin-left:115px;
+@include mobile{
+  margin-left:67px;
+
+  }
+}
+.c11{
+  margin-left:30px;
+  @include mobile{
+    
+  }
+}
+.c22{
+  margin-left:53px;
+  @include mobile{
+    
+  }
+}
+
+.c33{
+  margin-left:68px;
+  @include mobile{
+    
+  }
+
+}

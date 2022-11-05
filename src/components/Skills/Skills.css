@@ -1,0 +1,152 @@
+
+.skills {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(19, 16, 16);
+  width: 500px;
+  margin: 60px auto;
+  color: #fff;
+}
+
+.skillh{
+
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.skills li {
+  margin: 44px 0;
+  list-style: none;
+}
+
+.bar {
+  background-color: #000000;
+  display: block;
+  height: 11px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+
+.bar span{ 
+	height: 5px;
+	float: left;
+	background-color: rgb(253, 67, 112);
+}
+
+.html{ 
+	width: 93%;
+	animation: html 2s;
+}
+
+.css{ 
+	width: 93%;
+	animation: css 2s;
+}
+
+.javascript{ 
+	width: 80%;
+	animation: javascript 2s;
+}
+
+
+.reactjs{ 
+	width: 80%;
+	animation: reactjs 2s;
+}
+
+.bootstrap{ 
+	width: 70%;
+	animation: bootstrap 2s;
+}
+
+.scss{ 
+	width: 70%;
+	animation: scss 2s;
+}
+.figma{ 
+	width: 89%;
+	animation: figma 2s;
+}
+.canva{ 
+	width: 99%;
+	animation: canva 2s;
+}
+
+@keyframes html{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 93%;
+	}
+}
+
+@keyframes css{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 93%;
+	}
+}
+
+@keyframes javascript{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 80%;
+	}
+}
+
+@keyframes reactjs{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 80%;
+	}
+}
+@keyframes bootstrap{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 70%;
+	}
+}
+@keyframes scss{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 70%;
+	}
+}
+@keyframes figma{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 89%;
+	}
+}
+@keyframes canva{ 
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 99%;
+	}
+}

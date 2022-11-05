@@ -1,0 +1,125 @@
+@import "../../global.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section {
+  width: 100%;
+  min-height: 86vh;
+  background-color: #ffffff;
+
+  @include mobile {
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+.container {
+  width: 87%;
+  display: block;
+  margin: auto;
+  padding-top: 100px;
+
+  @include mobile {
+    width: 77%;
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+  }
+}
+.content-section {
+  float: left;
+  width: 47%;
+  float: none;
+  display: block;
+  margin: auto;
+  position: absolute;
+  @include mobile {
+    float: none;
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .title {
+    text-transform: uppercase;
+    font-size: 28px;
+    text-align: center;
+    font-size: 19px;
+
+    @include mobile {
+      text-align: center;
+      font-size: 19px;
+    }
+  }
+  .content {
+    p {
+      margin-top: 10px;
+      font-family: sans-serif;
+      font-size: 18px;
+      line-height: 1.5;
+      color: #000;
+
+      @include mobile {
+        margin-top: 13px;
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 1.5;
+        color: #000;
+      }
+    }
+    .button {
+      margin-top: 30px;
+      text-align: center;
+      padding: 18px 17px;
+
+      @include mobile {
+        padding: 18px 17px;
+        text-align: center;
+        overflow: hidden;
+      }
+      a {
+        background-color: #000000;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        letter-spacing: 1.5px;
+        padding: 9px 30px;
+        border: 2px solid #000;
+        @include mobile {
+          padding: 9px 30px;
+        }
+        &:hover {
+          background-color: #ffffff;
+          color: rgb(0, 0, 0);
+        }
+      }
+    }
+  }
+}
+.image-section {
+  float: right;
+  width: 40%;
+
+  @include mobile {
+    float: none;
+    width: 100%;
+  }
+  img {
+    width: 55%;
+    height: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+
+    @include mobile {
+      width: 29%;
+      height: auto;
+      height: auto;
+      display: block;
+      margin: auto;
+    }
+  }
+}
